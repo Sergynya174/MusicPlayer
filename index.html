@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru  ">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='./pages/index.css'>
+        <title>Music player</title>
+    </head>
+    <body class='page'>
+        <main class='content'>
+            <h1 class='title'>Музыкальный проигрыватель</h1>
+            <div class='music-container'>
+                <div class='music-container__info'>
+                    <h4 class='music-container__name-song'>Рок</h4>
+                    <img class='music-container__img-song' src='' alt=''>
+                    <div class='music-container__progress-container'>
+                        <div class='music-container__progress'></div>
+                    </div>
+                </div>
+                <div class='music-container__img-container'>
+                    <audio src='./music/BASMAT.mp3' id='audio'>Классическая</audio>
+                    <img class='music-container__imag' src='./img/serato_purple.png'  alt='music-cover' id='cover'>
+                </div>
+                <nav class='music-container__navigation'>
+                    <div class='music-container__btn'>
+                        <button class='music-container__action-btn music-container__action-btn_prev' id='prev'></button>
+                        <button class='music-container__action-btn music-container__action-btn_play' id='play'></button>
+                        <button class='music-container__action-btn music-container__action-btn_next' id='next'></button>
+                    </div>
+                    <button class='music-container__volume' id='volume'></button>
+                </nav>
+            </div>
+        </main>
+        </div>
+        <script src='./script/script.js'></script>
+        <script src="https://music.yandex.ru/api/audio/dist/index.min.js" type="javascript"></script>
+    </body>
+</html>

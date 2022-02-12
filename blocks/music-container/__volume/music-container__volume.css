@@ -1,0 +1,13 @@
+.music-container__volume{
+    background-image: url(../../../img/slider.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15px 100px;
+    cursor: pointer;
+    border: 0;
+    opacity: .8;
+}
+
+.music-container__volume:hover{
+    opacity: 1;
+}

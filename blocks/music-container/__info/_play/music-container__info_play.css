@@ -1,0 +1,4 @@
+.music-container__info_play{
+    opacity: 1;
+    transform: translateY(-100%);
+}

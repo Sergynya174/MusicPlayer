@@ -1,0 +1,11 @@
+.page{
+    box-sizing: border-box;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Beer money', Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(0deg, #c2e9fb 23.8%, #a1c4fd 90%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,12 @@
+.music-container{
+    border-radius: 15px;
+    display: flex;
+    background-color: #FFF8DC;
+    box-shadow: 0 20px 20px 0 rgba(54, 149, 187, 0.9);
+    margin: 100px;
+    position: relative;
+    z-index: 10;
+    width: 400px;
+    height: 80px;
+    justify-content: space-between;
+}

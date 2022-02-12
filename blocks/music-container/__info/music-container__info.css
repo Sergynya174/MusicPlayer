@@ -1,0 +1,13 @@
+.music-container__info{
+    background-color: rgb(241, 233, 206);
+    border-radius: 15px 15px 0 0;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: calc(100% - 40px);
+    transform: translateY(0%);
+    opacity: 0;
+    transition: transform 0.3s ease-in, opacity 0.9s ease-in, 0.3s ease-in;
+    padding: 0 0 10px;
+}
+

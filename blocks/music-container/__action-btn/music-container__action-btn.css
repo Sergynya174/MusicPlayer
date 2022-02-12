@@ -1,0 +1,13 @@
+.music-container__action-btn{
+    border: 0;
+    cursor: pointer;
+    padding: 20px;
+    margin: 0 20px;
+    background-size: cover;
+    opacity: .8;
+    background-repeat: no-repeat;
+}
+
+.music-container__action-btn:hover{
+    opacity: 1;
+}

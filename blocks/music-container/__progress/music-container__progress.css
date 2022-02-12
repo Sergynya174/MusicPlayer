@@ -1,0 +1,7 @@
+.music-container__progress{
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    height: 100%;
+    width: 50%;
+    transition: width 0.1s linear;
+}
