@@ -11,7 +11,7 @@ const musicInfo = document.querySelector('.music-container__info');
 const btnVolum = document.querySelector('.music-container__volume');
 const imgSongPlay = 'music-container__imag_play';
 const musicInfoPlay = 'music-container__info_play';
-const songs = ['BASMAT', 'soldat', 'Sound', '2_Unlimited_-_No_limit', 'Akula_-_Malo', 'Edward_Maya_-_Stereo_Love'];
+const songs = ['BASMAT', 'soldat', 'Sound', '2_Unlimited_-_No_limit', 'Akula_-_Malo', 'Edward_Maya_-_Stereo_Love', 'O-Zone_-_Dragostea_Din_Tei', 'Ruki_Vverkh_-_Kroshka_moya', 'Ruki_Vverkh_-_CHuzhie_Guby'];
 const img = ['serato_blue', 'serato_dark', 'serato_green', 'serato_red', 'serato_yellow', 'serato_pink'];
 
 playBtn.addEventListener('click', handlePlayBtn);
