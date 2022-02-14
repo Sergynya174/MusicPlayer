@@ -11,7 +11,7 @@ const musicInfo = document.querySelector('.music-container__info');
 const btnVolum = document.querySelector('.music-container__volume');
 const imgSongPlay = 'music-container__imag_play';
 const musicInfoPlay = 'music-container__info_play';
-const songs = ['BASMAT', 'soldat', 'Sound', '2_Unlimited_-_No_limit', 'Akula_-_Malo', 'Edward_Maya_-_Stereo_Love', 'O-Zone_-_Dragostea_Din_Tei', 'Ruki_Vverkh_-_Kroshka_moya', 'Ruki_Vverkh_-_CHuzhie_Guby'];
+const songs = ['BASMAT', 'soldat', 'Sound', '2_Unlimited_-_No_limit', 'Akula_-_Malo', 'Edward_Maya_-_Stereo_Love', 'O-Zone_-_Dragostea_Din_Tei', 'Ruki_Vverkh_-_Kroshka_moya', 'Ruki_Vverkh_-_CHuzhie_Guby', 'Propaganda_-_Melom', 'VIA_Gra_-_YA_ne_vernus', 'Virus_-_Poproshu_tebya', 'Virus_-_Schaste', 'Virus_-_Ty_menya_ne_ishhi', 'YUrijj_SHatunov_-_Detstvo', 'Splin_-_Mojo_serdce', 'Strelki_-_Na_vecherinke', 'ZHenya_Belousov_-_Devochka_Moya_Sineglazaya', 'ZHasmin_-_Perepishu_lyubov', 'ZHanna_riske_-_A_na_more_belyjj_pesok', 'Kombinaciya_-_Russian_Girl', 'Kombinaciya_-_Bukhgalter', 'E-Type_-_Set_The_World_On_Fire', 'Dj_MIKO_-_Whats_Up', 'Dr_Alban_-_Its_My_Life', 'Demo_-_20_let'];
 const img = ['serato_blue', 'serato_dark', 'serato_green', 'serato_red', 'serato_yellow', 'serato_pink'];
 
 playBtn.addEventListener('click', handlePlayBtn);
