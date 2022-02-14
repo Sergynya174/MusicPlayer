@@ -66,7 +66,7 @@ function prevSong(){
     imgIndex--
     
     if(songIndex < 0){
-        songIndex = songs.lenght - 1
+        songIndex = songs.length - 1
     }
 
     if(imgIndex < 0){
