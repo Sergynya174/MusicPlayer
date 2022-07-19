@@ -27,8 +27,8 @@ let imgIndex = 0;
 loadSong(songs[songIndex]);
 loadImg(img[imgIndex]);
 
-function switchingVolume (value) {
-    volumeInfo.innerHTML = value;
+function switchingVolume () {
+    volumeInfo.innerHTML = musicValue.value;
     audio.volume = volumeInfo.innerHTML / 100;
 }
 
@@ -141,6 +141,9 @@ function setProgress(evt){
 
     audio.currentTime = (clickX / width) * duration
 }
+
+musicValue.addEventListener('mousemove', switchingVolume);
+musicValue.addEventListener('onchange', switchingVolume);
 
 audio.addEventListener('timeupdate', updateProgress);
 
