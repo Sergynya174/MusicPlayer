@@ -1,0 +1,7 @@
+.music-container__fill-volume{
+    width: 20px;
+    height: 15px;
+    margin: 0 0 auto 10px;
+    text-align: center;
+    content: '%';
+}

@@ -1,13 +1,18 @@
 .music-container__volume{
-    background-image: url(../../../img/slider.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 15px 100px;
+    -webkit-appearance: none;
+    background-color: #a1c4fd;
+    width: 150px;
+    height: 5px;
     cursor: pointer;
     border: 0;
-    opacity: .8;
+    margin: 0;
+    align-self: center;
 }
 
-.music-container__volume:hover{
-    opacity: 1;
+.music-container__volume::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    border-radius: 50%;
+    background-color: #6ea0f0;
+    width: 10px;
+    height: 10px;
 }

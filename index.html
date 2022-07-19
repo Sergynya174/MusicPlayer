@@ -17,9 +17,13 @@
                     <div class='music-container__progress-container'>
                         <div class='music-container__progress'></div>
                     </div>
+                    <div class="music__time">
+                        <p class="music__time-current">00:00</p>
+                        <p class="music__time-duration">00:00</p>
+                    </div>
                 </div>
                 <div class='music-container__img-container'>
-                    <audio src='./music/BASMAT.mp3' id='audio'>Классическая</audio>
+                    <audio src='./music/BASMAT.mp3' id='audio'></audio>
                     <img class='music-container__imag' src='./img/serato_purple.png'  alt='music-cover' id='cover'>
                 </div>
                 <nav class='music-container__navigation'>
@@ -28,7 +32,10 @@
                         <button class='music-container__action-btn music-container__action-btn_play' id='play'></button>
                         <button class='music-container__action-btn music-container__action-btn_next' id='next'></button>
                     </div>
-                    <button class='music-container__volume' id='volume'></button>
+                    <div class='music-container__container-volume'>
+                        <input class='music-container__volume' type='range' min='0' max='100' value='50' id='volume' onchange="switchingVolume(this.value)" onmousemove="switchingVolume(this.value)"></input>
+                        <p class='music-container__fill-volume'></p>
+                    </div>
                 </nav>
             </div>
         </main>

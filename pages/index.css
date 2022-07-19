@@ -8,7 +8,12 @@
 @import url(../blocks/music-container/__info/_play/music-container__info_play.css);
 @import url(../blocks/music-container/__name-song/music-container__name-song.css);
 @import url(../blocks/music-container/__progress-container/music-container__progress-container.css);
+@import url(../blocks/music-container/__time/music__time.css);
 @import url(../blocks/music-container/__progress/music-container__progress.css);
+@import url(../blocks/music-container/__time-duration/music__time-duration.css);
+@import url(../blocks/music-container/__time-current/music__time-current.css);
+@import url(../blocks/music-container/__fill-volume/music-container__fill-volume.css);
+@import url(../blocks/music-container/__container-volume/music-container__container-volume.css);
 @import url(../blocks/music-container/__img-container/music-container__img-container.css);
 @import url(../blocks/music-container/__imag/music-container__imag.css);
 @import url(../blocks/music-container/__imag/_play/music-container__imag_play.css);

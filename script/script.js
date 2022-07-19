@@ -8,7 +8,10 @@ const progressContainer = document.querySelector('.music-container__progress-con
 const nameSong = document.querySelector('.music-container__name-song');
 const imgSong = document.querySelector('.music-container__imag');
 const musicInfo = document.querySelector('.music-container__info');
-const btnVolum = document.querySelector('.music-container__volume');
+const musicValue = document.querySelector('.music-container__volume');
+const volumeInfo = document.querySelector('.music-container__fill-volume');
+const timeDuration = document.querySelector('.music__time-duration');
+const timeCurrent = document.querySelector('.music__time-current');
 const imgSongPlay = 'music-container__imag_play';
 const musicInfoPlay = 'music-container__info_play';
 const songs = ['BASMAT', 'soldat', 'Sound', '2_Unlimited_-_No_limit', 'Akula_-_Malo', 'Edward_Maya_-_Stereo_Love', 'O-Zone_-_Dragostea_Din_Tei', 'Ruki_Vverkh_-_Kroshka_moya', 'Ruki_Vverkh_-_CHuzhie_Guby', 'Propaganda_-_Melom', 'VIA_Gra_-_YA_ne_vernus', 'Virus_-_Poproshu_tebya', 'Virus_-_Schaste', 'Virus_-_Ty_menya_ne_ishhi', 'YUrijj_SHatunov_-_Detstvo', 'Splin_-_Mojo_serdce', 'Strelki_-_Na_vecherinke', 'ZHenya_Belousov_-_Devochka_Moya_Sineglazaya', 'ZHasmin_-_Perepishu_lyubov', 'ZHanna_riske_-_A_na_more_belyjj_pesok', 'Kombinaciya_-_Russian_Girl', 'Kombinaciya_-_Bukhgalter', 'E-Type_-_Set_The_World_On_Fire', 'Dj_MIKO_-_Whats_Up', 'Dr_Alban_-_Its_My_Life', 'Demo_-_20_let'];
@@ -23,6 +26,11 @@ let imgIndex = 0;
 
 loadSong(songs[songIndex]);
 loadImg(img[imgIndex]);
+
+function switchingVolume (value) {
+    volumeInfo.innerHTML = value;
+    audio.volume = volumeInfo.innerHTML / 100;
+}
 
 function loadSong(song) {
     nameSong.innerText = song;
@@ -98,6 +106,27 @@ function nextSong(){
 
     playSong()
 }
+
+
+audio.ontimeupdate = function() {
+    if(audio.duration) {
+        let durmin = Math.floor(audio.duration / 60);
+        let dursec = Math.floor(audio.duration - durmin * 60);
+        let curmin = Math.floor(audio.currentTime / 60);
+        let cursec = Math.floor(audio.currentTime - curmin * 60);
+
+        if (durmin < 10) durmin = "0" + durmin;
+        if (dursec < 10) dursec = "0" + dursec;
+        if (curmin < 10) curmin = "0" + curmin;
+        if (cursec < 10) cursec = "0" + cursec;
+
+        duration = durmin + ':' + dursec;
+        currentTime = curmin + ':' + cursec;
+
+        timeCurrent.innerHTML = `${currentTime}`;
+        timeDuration.innerHTML = `${duration}`;
+    }
+};
 
 function updateProgress(evt){
     const {duration, currentTime} = evt.srcElement
